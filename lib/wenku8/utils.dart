@@ -5,7 +5,7 @@ import 'package:utf/utf.dart';
 import './webku8.dart';
 
 Future<http.Response> mustGetLink(String link) {
-  return http.get(link).then((value) {
+  return http.get(Uri.parse(link)).then((value) {
     return value;
   });
 }
